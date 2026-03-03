@@ -20,3 +20,6 @@ console.log(Math.sqrt(16)); // 4 --> calculates the square root of 16
 console.log(Math.max(1, 5, 3)); // 5 --> returns the largest of the given numbers
 
 console.log(Math.min(1, 5, 3)); // 1 --> returns the smallest of the given numbers
+
+console.log((3.6789).toFixed(2)); // 3.68 --> rounds the number to 2 decimal places and returns a string
+console.log(typeof (3.6789).toFixed(2)); // string
