@@ -1,6 +1,6 @@
 let prompt = require("prompt-sync")();
 
-let row = prompt("Enter number of row ");
+let row = Number(prompt("Enter number of row "));
 
 
 for (let i = 1; i <= row; i++) {
