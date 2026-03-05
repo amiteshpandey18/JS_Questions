@@ -7,6 +7,6 @@
 
 let arr = new Array(5);
 
-for(let i =0;i<5;i++) {
+for (let i = 0; i < 5; i++) {
     arr[i] = Number(prompt("Enter value"));  // add element from the console
 }
