@@ -9,16 +9,18 @@ let arr = [1, 2, 3, 4, 5];
 // console.log(arr);
 
 
-// rotation using user input  k times --------------
+// rotation using user input  k times -----------------
 
-let k = 2
+let k = 2;
 
-for(let i = 0; i < k; i++) {
-     let temp = arr[0];
-     for(let j = 1; j < arr.length; j++) {
-        arr[j-1] = arr[j]
-     }
-     arr[arr.length-1] = temp;
+k = k % arr.length; // Handle unneccesory rotation
+
+for (let i = 0; i < k; i++) {
+   let temp = arr[0];
+   for (let j = 1; j < arr.length; j++) {
+      arr[j - 1] = arr[j]
+   }
+   arr[arr.length - 1] = temp;
 }
 
 console.log(arr);
