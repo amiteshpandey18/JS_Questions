@@ -1,5 +1,5 @@
-// If char is lowercase convert into uppercase,  if char is uppercase convert into lowercase
 
+// If char is lowercase convert into uppercase,  if char is uppercase convert into lowercase
 
 let str = "aMiTesH";
 
