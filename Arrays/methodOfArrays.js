@@ -73,3 +73,10 @@ console.log(result);
 let arr1 = [1, 2, 3, 4, 5];
 let arr2 = [...arr1, 6, 7];
 console.log(arr2);
+
+// 10. Use every() to check element is even
+
+let ele = [2, 4, 3, 6, 8, 10];
+
+let even = ele.every((ele) => ele % 2 === 0);
+console.log(even);
