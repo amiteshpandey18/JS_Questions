@@ -1,7 +1,9 @@
-// Give directly
+// Direct Property Access (represents current value)
 
 let a = document.querySelector("a");
 a.href = "https://www.google.com";
+
+//  These Represents initial value-------------------------------------------------
 
 // 1. setAttribute(name, value) -> set or update attribute
 
