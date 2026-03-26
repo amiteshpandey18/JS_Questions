@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+            top: 100px;
+            left: 100px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="box"></div>
+
+    <script>
+        let box = document.getElementById("box");
+
+        let x = 100;
+        let y = 100;
+
+        // keydown → movement start
+        document.addEventListener("keydown", function (e) {
+
+            if (e.key === "ArrowRight") {
+                x += 20;
+            }
+            if (e.key === "ArrowLeft") {
+                x -= 20;
+            }
+            if (e.key === "ArrowUp") {
+                y -= 20;
+            }
+            if (e.key === "ArrowDown") {
+                y += 20;
+            }
+
+            box.style.left = x + "px";
+            box.style.top = y + "px";
+        });
+
+        // keyup → stop message
+        document.addEventListener("keyup", function () {
+            console.log("Stopped moving");
+        });
+    </script>
+
+</body>
+
+</html>
