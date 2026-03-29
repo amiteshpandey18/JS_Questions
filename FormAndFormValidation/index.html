@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form and Form validation</title>
+</head>
+
+<body>
+
+    <form autocomplete="off" id="myForm">
+        <input type="text" id="name" placeholder="Enter name">
+
+        <!-- Showing error messege on UI -->
+        <small id="error" style="display:none; color:red;"></small>
+        <input type="email" id="email" placeholder="Enter email">
+        <button type="submit">Submit</button>
+    </form>
+
+    <!-- Validation from HTML build in -->
+    <input type="email" required>
+    <input type="text" minlength="3" placeholder="min 3 char">
+
+    <!-- Using Pattern attribute -->
+    <input type="text" pattern="[A-Za-z]{3,}" placeholder="Only letters, min 3">
+
+    <script src="script.js"></script>
+</body>
+
+</html>
